@@ -1,7 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { initialize as initializeDB } from "./database";
+import { sequelize } from "./database/models";
 
 const startExpressApp = () => {
   const PORT = 8000;
@@ -28,7 +28,7 @@ const startExpressApp = () => {
 };
 
 const main = async () => {
-  await initializeDB();
+  await sequelize.authenticate({ logging: false });
   startExpressApp();
 };
 
