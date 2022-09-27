@@ -7,6 +7,7 @@
     "start": "",
     "build": "",
     "dev": "lerna run dev --stream",
+    "clean": "lerna clean --y",
     "server": "lerna exec --scope server npm",
     "client": "lerna exec --scope client npm",
     "install:server": "lerna add --scope=server",
