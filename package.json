@@ -1,9 +1,18 @@
 {
   "name": "next-express-postgres-boilerplate",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "",
+    "build": "",
+    "dev": "lerna run dev --stream",
+    "server": "lerna exec --scope server npm",
+    "client": "lerna exec --scope client npm",
+    "install:server": "lerna add --scope=server",
+    "install:client": "lerna add --scope=client",
+    "install:server:dev": "lerna add --scope=server --dev",
+    "install:client:dev": "lerna add --scope=client --dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
